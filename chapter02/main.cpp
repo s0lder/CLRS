@@ -2,8 +2,40 @@
 #include <random>
 #include <chrono>
 #include <array>
+#include <vector>
 
 const int kArrSize = 8;
+
+void Merge(std::vector<int>& A, int p, int q, int r) {
+    // q = (p + r) / 2
+
+    int nL = q - p + 1; // length of A[p : q]
+    int nR = r - 1; // length of A[q + 1 : r]
+
+    std::vector<int> L, R;
+    L.resize(nL - 1);
+    R.resize(nR - 1);
+
+    for (int i = 0; i < nL - 1; i++)
+        L[i] = A[p + i];
+    for (int i = 0; i < nR - 1; i++)
+        R[i] = A[q + i + 1];
+
+    int i = 0, j = 0, k = 0;
+
+    while (i < nL && j < nR) {
+        if (L[i] <= R[j])
+            A[k] = L[i++];
+        else if (A[k] == R[j])
+            j++;
+        k++;
+    }
+
+    while (i < nL)
+        A[k++] = L[i++];
+    while (j < nR) 
+        A[k++] = R[j++];
+}
 
 void AddBinaryIntegers(std::array<int, kArrSize>& A, std::array<int, kArrSize>& B, std::array<int, kArrSize + 1>& C) {
     int carry = 0;
@@ -76,6 +108,7 @@ int main() {
         else
             std::cout << "NO";
     }
+
     /*
         auto t1 = std::chrono::high_resolution_clock::now();
         InsertionSort(arr);
