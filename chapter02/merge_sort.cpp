@@ -29,14 +29,14 @@ void Merge(std::vector<int>& A, int p, int q, int r) {
 }
 
 void MergeSort(std::vector<int>& A, int p, int r) {
-    if (p != r) {
-        int q = (p + r) / 2;
-        MergeSort(A, p, q);
-        MergeSort(A, q + 1, r);
-        Merge(A, p, q, r);
-    }
+    if (p >= r)
+        return;
 
-    return;
+    // (r - p) / 2 is unsafe -- potential overflow
+    int q = p + (r - p) / 2;
+    MergeSort(A, p, q);
+    MergeSort(A, q + 1, r);
+    Merge(A, p, q, r);
 }
 
 int main() {
