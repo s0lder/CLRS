@@ -29,13 +29,14 @@ void Merge(std::vector<int>& A, int p, int q, int r) {
 }
 
 void MergeSort(std::vector<int>& A, int p, int r) {
-    if (p >= r)
-        return;
+    if (p != r) {
+        int q = (p + r) / 2;
+        MergeSort(A, p, q);
+        MergeSort(A, q + 1, r);
+        Merge(A, p, q, r);
+    }
 
-    int q = (p + r) / 2;
-    MergeSort(A, p, q);
-    MergeSort(A, q + 1, r);
-    Merge(A, p, q, r);
+    return;
 }
 
 int main() {
