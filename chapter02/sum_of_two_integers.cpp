@@ -3,6 +3,7 @@
 #include <vector>
 
 int HasSum(std::vector<int>& A, int target) {
+    // or use merge sort (std::stable_sort)
     std::sort(A.begin(), A.end());
 
     int lo = 1, hi = A.size() - 1;
