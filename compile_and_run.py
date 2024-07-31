@@ -31,8 +31,15 @@ def compile_and_run(directory, source_file="main.cpp"):
     if not os.path.exists(build_subdir):
         os.makedirs(build_subdir)
 
-    # Compile the source file
-    compile_command = ["g++", "-o", exe_file, source_path]
+    # Compile the source file with the lib directory included and link against libutils
+    compile_command = [
+        "g++",
+        "-o", exe_file,
+        source_path,
+        "-Ilib",  # Include the lib directory
+        "-Llib",  # Link against the lib directory
+        "-lutils"  # Link with libutils.a
+    ]
     result = subprocess.run(compile_command, capture_output=True)
 
     # Check if compilation was successful
