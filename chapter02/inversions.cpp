@@ -59,8 +59,8 @@ int NaiveCount(const std::vector<int>& arr) {
 }
 
 int main() {
-    const int upper_bound = 1000;
-    const int kArrSize = 100;
+    const int upper_bound = 100;
+    const int kArrSize = 10;
 
     std::vector<int> arr(kArrSize + 1);
 
