@@ -23,34 +23,26 @@ def compile_and_run(directory, source_file="main.cpp"):
     build_subdir = os.path.join(build_dir, f"{os.path.basename(directory)}_build")
     exe_file = os.path.join(build_subdir, f"{base_name}.exe")
 
-    # Save the current working directory
-    original_directory = os.getcwd()
+    # Create build directory if it doesn't exist
+    if not os.path.exists(build_dir):
+        os.makedirs(build_dir)
 
-    try:
-        # Create build directory if it doesn't exist
-        if not os.path.exists(build_dir):
-            os.makedirs(build_dir)
+    # Create the specific build subdirectory if it doesn't exist
+    if not os.path.exists(build_subdir):
+        os.makedirs(build_subdir)
 
-        # Create the specific build subdirectory if it doesn't exist
-        if not os.path.exists(build_subdir):
-            os.makedirs(build_subdir)
+    # Compile the source file
+    compile_command = ["g++", "-o", exe_file, source_path]
+    result = subprocess.run(compile_command, capture_output=True)
 
-        # Compile the source file
-        compile_command = ["g++", "-o", exe_file, source_path]
-        result = subprocess.run(compile_command, capture_output=True)
-
-        # Check if compilation was successful
-        if result.returncode == 0:
-            # Run the compiled program
-            run_command = [exe_file]
-            subprocess.run(run_command)
-        else:
-            print("Compilation failed.")
-            print(result.stderr.decode())
-
-    finally:
-        # Change back to the original directory
-        os.chdir(original_directory)
+    # Check if compilation was successful
+    if result.returncode == 0:
+        # Run the compiled program
+        run_command = [exe_file]
+        subprocess.run(run_command)
+    else:
+        print("Compilation failed.")
+        print(result.stderr.decode())
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
