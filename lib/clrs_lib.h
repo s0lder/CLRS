@@ -21,12 +21,12 @@ auto MeasureTime(Func&& func, Args&&... args) {
         std::invoke(std::forward<Func>(func), std::forward<Args>(args)...);
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> duration = end - start;
-        std::cout << "Execution time: " << duration.count() << " seconds" << std::endl;
+        std::cout << "Execution time: " << duration.count() << " s" << std::endl;
     } else {
         auto result = std::invoke(std::forward<Func>(func), std::forward<Args>(args)...);
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> duration = end - start;
-        std::cout << "Execution time: " << duration.count() << " seconds" << std::endl;
+        std::cout << "Execution time: " << duration.count() << " s" << std::endl;
         return result;
     }
 }

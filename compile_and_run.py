@@ -21,7 +21,7 @@ def compile_and_run(directory, source_file="main.cpp"):
     script_dir = os.path.dirname(os.path.realpath(__file__))
     build_dir = os.path.join(script_dir, "build")
     build_subdir = os.path.join(build_dir, f"{os.path.basename(directory)}_build")
-    exe_file = os.path.join(build_subdir, f"{base_name}.exe")
+    output_file = os.path.join(build_subdir, base_name)
 
     # Create build directory if it doesn't exist
     if not os.path.exists(build_dir):
@@ -34,7 +34,7 @@ def compile_and_run(directory, source_file="main.cpp"):
     # Compile the source file with the lib directory included and link against libutils
     compile_command = [
         "g++",
-        "-o", exe_file,
+        "-o", output_file,
         source_path,
         "-Ilib",  # Include the lib directory
         "-Llib",  # Link against the lib directory
@@ -45,7 +45,7 @@ def compile_and_run(directory, source_file="main.cpp"):
     # Check if compilation was successful
     if result.returncode == 0:
         # Run the compiled program
-        run_command = [exe_file]
+        run_command = [output_file]
         subprocess.run(run_command)
     else:
         print("Compilation failed.")
