@@ -1,4 +1,4 @@
-<img src="">
+<img src="https://github.com/s0lder/clrs-helper/blob/main/cover-repo.png?raw=true">
 
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/s0lder/clrs-helper?style=flat">
 
