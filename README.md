@@ -12,7 +12,7 @@ Feel free to contribute!
 # Table of Contents
 - [Who is this for?](#who-is-this-for)
 - [Prerequisites](#prerequisites)
-- [Give a star]()
+- [Give a star](#give-a-star)
 
 # Who is this for?
 
@@ -36,6 +36,7 @@ If not, try these commands:
 
 ### Windows
 Follow the installation guide on this website: https://nuwen.net/mingw.html
+Get Python from the official website.
 
 ### MacOS
 You should already have both of them installed.
