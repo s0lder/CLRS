@@ -4,9 +4,10 @@
 
 ---
 
-# clrs-helper
-
+# clrs-helper (WORK IN PROGRESS)
 "Introduction to Algorithms" (CLRS) 4th edition exercises, problems and theory
+<br>
+Feel free to contribute!
 
 # Table of Contents
 - [Who is this for?](#who-is-this-for)
