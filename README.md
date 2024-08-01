@@ -1,6 +1,6 @@
 <img src="https://github.com/s0lder/clrs-helper/blob/main/cover-repo.png?raw=true">
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/s0lder/clrs-helper?style=flat">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/s0lder/clrs-helper?style=flat"> <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/s0lder/clrs-helper?style=flat"> <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/s0lder/clrs-helper"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/s0lder/clrs-helper"> <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-closed/s0lder/clrs-helper"> <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr-closed/s0lder/clrs-helper">
 
 ---
 
