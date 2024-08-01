@@ -36,6 +36,7 @@ If not, try these commands:
 
 ### Windows
 Follow the installation guide on this website: https://nuwen.net/mingw.html
+<br>
 Get Python from the official website.
 
 ### MacOS
