@@ -1,0 +1,27 @@
+# Ignore the build directory
+build/
+
+# Ignore executable files
+*.exe
+
+# Ignore temporary files and backup files
+*.tmp
+*.log
+*.bak
+
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore IDE and editor specific files
+.vscode/
+*.swp
+*.swo
+
+# Ignore operating system generated files
+.DS_Store
+Thumbs.db
+
+# Ignore other unwanted files or directories
+*.out
+*.so
