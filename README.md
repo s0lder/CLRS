@@ -2,7 +2,7 @@
 
 <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/s0lder/clrs-helper?style=flat"> <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/s0lder/clrs-helper?style=flat"> <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/s0lder/clrs-helper"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/s0lder/clrs-helper"> <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-closed/s0lder/clrs-helper"> <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr-closed/s0lder/clrs-helper">
 
-<a href="https://www.buymeacoffee.com/gbraad" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/s0lder" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ---
 
