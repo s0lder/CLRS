@@ -1,7 +1,6 @@
 #include "clrs_lib.h"
 
 #include <random>
-#include <chrono>
 
 void FillRandVec(std::vector<int>& vec, int upper_bound, bool zero_indexed) {
     std::random_device dev;
